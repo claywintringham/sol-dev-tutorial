@@ -242,7 +242,7 @@ export async function sayHello(): Promise<void> {
   const instruction = new TransactionInstruction({
     keys: [{pubkey: greetedPubkey, isSigner: false, isWritable: true}],
     programId,
-    data: createSetInstruction(), // All instructions are hellos // createDecrementInstruction()
+    data: createSetInstruction(), // All instructions are hellos // createSetInstruction// createDecrementInstruction // createDecrementInstruction()
   });
   await sendAndConfirmTransaction(
     connection,
